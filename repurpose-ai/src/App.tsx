@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Settings, Sparkles, Copy, Check, Twitter, Linkedin, FileText, Github, Loader2 } from 'lucide-react';
+import { Settings, Sparkles, Copy, Check, Twitter, Linkedin, FileText, Github, Loader2, Coffee, Briefcase } from 'lucide-react';
 
 type Tab = 'twitter' | 'linkedin' | 'blog';
 
@@ -90,6 +90,12 @@ export default function App() {
           <div className="flex items-center gap-4">
             <a href="#" className="hidden sm:flex text-sm text-neutral-400 hover:text-white items-center gap-1">
               <Github size={16} /> Open Source
+            </a>
+            <a href="https://buymeacoffee.com/tadatuta" target="_blank" rel="noopener noreferrer" className="hidden sm:flex text-sm text-neutral-400 hover:text-white items-center gap-1 transition-colors">
+              <Coffee size={16} /> Buy me a Coffee
+            </a>
+            <a href="mailto:hire@example.com?subject=Custom AI Development" className="hidden sm:flex text-sm text-neutral-400 hover:text-white items-center gap-1 transition-colors">
+              <Briefcase size={16} /> Hire Me
             </a>
             <button
               onClick={() => setShowSettings(!showSettings)}
